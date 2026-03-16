@@ -3,7 +3,7 @@
 
   "packageRules": [
     {
-      "description": "Automerge MAJOR updates for docker/* GitHub Actions",
+      "description": "Automerge all MAJOR updates for docker/* GitHub Actions",
       "matchManagers": ["github-actions"],
       "matchDatasources": ["github-tags"],
       "matchPackageNames": ["/^docker\\/.+/"],
