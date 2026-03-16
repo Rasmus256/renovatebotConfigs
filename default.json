@@ -1,0 +1,17 @@
+{
+  "description": "Rasmus256 – baseline Renovate policy",
+  "extends": [
+    "config:recommended",
+    "helpers:pinGitHubActionDigests"
+  ],
+
+  "dependencyDashboard": true,
+
+  "packageRules": [
+    {
+      "description": "Automerge non-breaking updates by default",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
+}
