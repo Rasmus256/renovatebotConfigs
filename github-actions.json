@@ -1,0 +1,16 @@
+{
+  "description": "GitHub Actions policy",
+
+  "packageRules": [
+    {
+      "description": "Automerge MAJOR updates for docker/* GitHub Actions",
+      "matchManagers": ["github-actions"],
+      "matchDatasources": ["github-tags"],
+      "matchPackageNames": ["/^docker\\/.+/"],
+      "matchUpdateTypes": ["major"],
+      "automerge": true,
+      "automergeType": "pr",
+      "automergeStrategy": "squash"
+    }
+  ]
+}
